@@ -23,7 +23,6 @@ cd ..
 cd src/leveldb
 chmod +x build_detect_platform
 cd ..
-make -f makefile.unix clean
 make -f makefile.unix
 
 # Now building bitquark-qt
