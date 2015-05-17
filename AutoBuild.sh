@@ -3,10 +3,10 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 # Install essential packages
 sudo apt-get -y install \
-    gcc g++ autoconf automake make git zip unzip \
-    qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev \
-    libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libprotobuf-dev \
-    protobuf-compiler libqrencode-dev \
+gcc g++ autoconf automake make git zip unzip \
+qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev \
+libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libprotobuf-dev \
+protobuf-compiler libqrencode-dev \
 \
 
 # Get latest BitQuark source
