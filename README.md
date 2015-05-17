@@ -30,18 +30,21 @@ You need the Qt4 run-time libraries to run BitQuark-Qt. On Debian or Ubuntu:
 
 `sudo apt-get -y install gcc g++ autoconf automake make git zip unzip qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libprotobuf-dev protobuf-compiler libqrencode-dev`
 
+`cd BitQuark-0.8.3r19`
+
+` wget -O- http://sourceforge.net/projects/libpng/files/libpng16/older-releases/1.6.10/libpng-1.6.10.tar.gz | tar -zxf -`
+`cd libpng-1.6.10`
+`./configure && make && sudo make install`
+`cd ..`
+
 `cd src/leveldb`
-
 `chmod +x build_detect_platform`
-
 `cd ..`
 
 `make -f makefile.unix`
-
 `cd ..`
 
 ` qmake "USE_QRCODE=1" "USE_UPNP=1" "USE_IPV6=1" bitquark-qt.pro`
-
 `make`
 
 
