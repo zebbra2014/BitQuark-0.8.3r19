@@ -11,6 +11,8 @@ This product includes software developed by the OpenSSL Project for use in the [
 cryptographic software written by Eric Young ([eay@cryptsoft.com](mailto:eay@cryptsoft.com)), UPnP software written by Thomas Bernard and
 sphlib 3.0 by Thomas Pornin.
 
+BitQuark Dev Team ([bitquarkcoin@gmail.com](mailto:bitquarkcoin@gmail.com))
+
 
 Intro
 ---------------------
@@ -23,6 +25,7 @@ with each other, with the help of a P2P network to check for double-spending.
 Setup
 ---------------------
 You need the Qt4 run-time libraries to run BitQuark-Qt. On Debian or Ubuntu:
+
 `sudo apt-get -y install gcc g++ autoconf automake make git zip unzip qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libprotobuf-dev protobuf-compiler libqrencode-dev`
 
 `cd src/leveldb`
