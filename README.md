@@ -1,7 +1,9 @@
-BitQuark 0.8.3.1
+BitQuark 0.8.3.19
 ====================
 
-Copyright (c) 2009-2013 Bitcoin Developers
+Copyright (c) 2009-2015 Bitcoin Developers
+Copyright (c) 2013-2015 Quarkcoin Developers
+Copyright (c) 2014-2015 BitQuark Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -20,8 +22,22 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 ---------------------
-You need the Qt4 run-time libraries to run Bitcoin-Qt. On Debian or Ubuntu:
-	`sudo apt-get install libqtgui4`
+You need the Qt4 run-time libraries to run BitQuark-Qt. On Debian or Ubuntu:
+`sudo apt-get -y install gcc g++ autoconf automake make git zip unzip qt4-qmake libqt4-dev build-essential libboost-dev libboost-system-dev libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libssl-dev libdb++-dev libminiupnpc-dev libprotobuf-dev protobuf-compiler libqrencode-dev`
+
+`cd src/leveldb`
+
+`chmod +x build_detect_platform`
+
+`cd ..`
+
+`make -f makefile.unix`
+
+`cd ..`
+
+` qmake "USE_QRCODE=1" "USE_UPNP=1" "USE_IPV6=1" bitquark-qt.pro`
+
+`make`
 
 
 Other Pages
